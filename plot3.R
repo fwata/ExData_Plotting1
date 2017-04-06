@@ -21,6 +21,7 @@ pwrConsumFeb$Sub_metering_1 <-
         as.numeric(levels(pwrConsumFeb$Sub_metering_1))[pwrConsumFeb$Sub_metering_1]
 pwrConsumFeb$Sub_metering_2 <- 
         as.numeric(levels(pwrConsumFeb$Sub_metering_2))[pwrConsumFeb$Sub_metering_2]
+# it was not necessary to convert Sub_metering_3 to numeric, since it was already a double
 
 # Plotting
 Sys.setlocale(category = "LC_ALL", locale = "C") # to avoid labels in other languages 
