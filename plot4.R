@@ -21,6 +21,8 @@ pwrConsumFeb <- apply(pwrConsumFeb[3:9], 2, as.character) %>%
 
 # Plotting
 # Preparing the setup
+Sys.setlocale(category = "LC_ALL", locale = "C") # to avoid labels in other languages
+
 png(filename = "plot4.png", width = 480, height = 480)
 par(mfrow = c(2,2), mar = c(4,4,2,2))
 
